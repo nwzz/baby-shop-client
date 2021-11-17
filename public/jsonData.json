@@ -1,0 +1,54 @@
+[
+    {"_id":"6193fc91ca078e5c75e1b7ae",
+    "title":"Kashmir willow cricket bat",
+    "description":"The willow used in making bats in Kashmir was brought in by the British, who ruled India, during the 1820s. The industry combines traditional tools with modern technology. Some of the districts where these bats are made in Kashmir are Anantnag, Baramula, and Pahalgam.",
+    "cost":"250",
+    "days":"1 Day",
+    "location":"bd",
+    "image":"https://i.ibb.co/zsm2yKQ/Kashmir-willow-cricket-bat.jpg"
+    },
+
+    {"_id":"6193fde7ca078e5c75e1b7b0",
+        "title":"English Willow Cricket Bat",
+        "description":"English Willow - This is the best willow that money can buy. The blade is unbleached and usually has 8 to 12 blemish-free straight grains.",
+        "cost":"300",
+        "days":"1 Day",
+        "location":"India",
+        "image":"https://i.ibb.co/nk5c3f0/English-Willow-Cricket-Bat.jpg"
+    },
+    
+    {"_id":"6193fe6eca078e5c75e1b7b1",
+        "title":"White Ceat Hitman Cricket Bat",
+        "description":"Ceat hitman English willow cricket bat grade 1 English willow cricket bat used by Indian international cricket player Rohit Sharma.",
+        "cost":"249",
+        "days":"1 Day",
+        "location":"England",
+        "image":"https://i.ibb.co/7CMj2M1/White-Ceat-Hitman-Cricket-Bat.png"
+    },
+    
+    {"_id":"6193ffa4ca078e5c75e1b7b2",
+        "title":"5IVE Red Thoron Cricket Bat",
+        "description":"5IVE by Penta Sports are here to be the fulcrum that you base your sporting performance on and create the elements around which your game will revolve. Elements that would balance your game and in your quest for excellence, it's all about owning this balance.",
+        "cost":"399",
+        "days":"1 Day",
+        "location":"Srilinka",
+        "image":"https://i.ibb.co/N6G8KLm/5-IVE-Red-Thoron-Cricket-Bat.jpg"
+    },
+    
+    {"_id":"61940113ca078e5c75e1b7b3",
+        "title":"Mangoose Bat",
+        "description":"We are engaged in manufacturing and exporting a wide assortment of sports goods and accessories to meet the requirements of clients. The range of products being offered by us includes Cricket balls, Cricket Gloves, Cricket Pads, Cricket Stumps.","cost":"349",
+        "days":"1 Day",
+        "location":"Australia",
+        "image":"https://i.ibb.co/2FtBVN7/Mangoose-Bat.jpg"
+    },
+    
+    {"_id":"619401c4ca078e5c75e1b7b4",
+        "title":"Stanford Impressive Cricket Bat",
+        "description":"This is a very balanced bat to give real power to the cricketer.\nIts sweet spot gives a powerful hitting zone and has a large profile. ",
+        "cost":"299",
+        "days":"1 Day",
+        "location":"New Zealand",
+        "image":"https://i.ibb.co/D5pzM99/Stanford-Impressive-Cricket-Bat.jpg"
+        }
+    ]
