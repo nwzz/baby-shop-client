@@ -32,7 +32,7 @@ const AddService = ({ editService, restrictPermission, setEditService }) => {
 
         if (!editService || (editService && img)) {
             const imageData = new FormData();
-            imageData.set('key', 'a2ae5bb1002b5d482802737be6dd81c3');
+            imageData.set('key', 'a2ae5bb1002b5d482802737be6dd81c');
             imageData.append('image', img);
             try {
                 const res = await axios.post('https://api.imgbb.com/1/upload', imageData);
@@ -66,7 +66,7 @@ const AddService = ({ editService, restrictPermission, setEditService }) => {
                 setEditService({});
                 return toast.error("You haven't changed anything!");
             }
-            axios.patch(`https://polar-beyond-73344.herokuapp.com/${editService._id}`, serviceInfo)
+            axios.patch(`https://nwzz-baby-shop.herokuapp.com/${editService._id}`, serviceInfo)
                 .then(res => {
                     toast.dismiss(loading);
                     if (res.data) {
@@ -84,7 +84,7 @@ const AddService = ({ editService, restrictPermission, setEditService }) => {
             return;
         }
 
-        axios.post('https://polar-beyond-73344.herokuapp.com/addService', serviceInfo)
+        axios.post('https://nwzz-baby-shop.herokuapp.com/addService', serviceInfo)
             .then(res => {
                 toast.dismiss(loading);
                 if (res.data) {
@@ -122,12 +122,12 @@ const AddService = ({ editService, restrictPermission, setEditService }) => {
                 <div className="py-5 mx-auto mt-5 bg-white form-main" style={{ borderRadius: "15px", maxWidth: '85rem' }}>
                     <Form.Row className="justify-content-center">
                         <Form.Group as={Col} md={5} sm={12} className="mr-md-5">
-                            <Form.Label style={{ fontWeight: "bold" }}>Service Title</Form.Label>
+                            <Form.Label style={{ fontWeight: "bold" }}>Product Title</Form.Label>
                             <Form.Control
                                 type="text"
                                 defaultValue={editService ? editService.title : ""}
                                 {...register("name", { required: true })}
-                                placeholder="Bat Name" />
+                                placeholder="product Name" />
                         </Form.Group>
                         <Form.Group as={Col} md={5} sm={12}>
                             <Form.Label style={{ fontWeight: "bold" }}>Price</Form.Label>
@@ -147,7 +147,7 @@ const AddService = ({ editService, restrictPermission, setEditService }) => {
                                 placeholder="minimum waiting time " />
                         </Form.Group>
                         <Form.Group as={Col} md={5} sm={12}>
-                            <Form.Label style={{ fontWeight: "bold" }}>Location</Form.Label>
+                            <Form.Label style={{ fontWeight: "bold" }}>Origin</Form.Label>
                             <Form.Control
                                 style={{ maxWidth: "260px" }}
                                 type="text"
@@ -178,7 +178,7 @@ const AddService = ({ editService, restrictPermission, setEditService }) => {
                                             htmlFor="upload"
                                             variant="outline-primary"
                                             className="d-block p-2 upload-btn">
-                                            <FontAwesomeIcon icon={faCloudUploadAlt} className="mr-2" />bat Image
+                                            <FontAwesomeIcon icon={faCloudUploadAlt} className="mr-2" />Product Image
                                         </Button>
                                         <Form.Control
                                             hidden="hidden"

@@ -1,9 +1,9 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyAO2ieQXiWwu1f-cUfAvd2BENY4WQo_nxU",
-    authDomain: "bat-portal.firebaseapp.com",
-    projectId: "bat-portal",
-    storageBucket: "bat-portal.appspot.com",
-    messagingSenderId: "456693415197",
-    appId: "1:456693415197:web:4bf085d33250bd19fe75f4"
+  apiKey: "AIzaSyAEhDHKHfb8VVA3O8xx8Magq93HDiBSGz4",
+  authDomain: "nwzz-baby-shop.firebaseapp.com",
+  projectId: "nwzz-baby-shop",
+  storageBucket: "nwzz-baby-shop.appspot.com",
+  messagingSenderId: "738686267209",
+  appId: "1:738686267209:web:3256cdccca6565818c3498"
   };
 export default firebaseConfig;

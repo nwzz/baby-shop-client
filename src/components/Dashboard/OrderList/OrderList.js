@@ -11,7 +11,7 @@ const OrderList = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios.get(`https://polar-beyond-73344.herokuapp.com/orders?email=${email}`)
+        axios.get(`https://nwzz-baby-shop.herokuapp.com/orders?email=${email}`)
             .then(res => {
                 setOrders(res.data);
                 setLoading(false);
@@ -31,7 +31,7 @@ const OrderList = () => {
 
         const modifiedStatus = { id, status }
         console.log(modifiedOrders, modifiedStatus);
-        axios.patch('https://polar-beyond-73344.herokuapp.com/updateOrderStatus', modifiedStatus)
+        axios.patch('https://nwzz-baby-shop.herokuapp.com/updateOrderStatus', modifiedStatus)
             .then(res => res.data && toast.success(`Set to ${status}`))
             .catch(error => toast.error(error.message));
     }

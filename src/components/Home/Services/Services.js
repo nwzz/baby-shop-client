@@ -12,7 +12,7 @@ const Services = () => {
     const [showMore, setShowMore] = useState(false);
 
     useEffect(() => {
-        axios.get('https://polar-beyond-73344.herokuapp.com/services')
+        axios.get('jsonData.json')
             .then(res => {
                 setServices(res.data);
                 setLoading(false);
@@ -24,8 +24,8 @@ const Services = () => {
     }
     return (
         <section id="services" className="text-center py-5">
-            <h5>What We Do</h5>
-            <h1>Services We Provide</h1>
+            
+            <h1>Products For The Babies</h1>
             <Row className="justify-content-center mx-auto mt-md-5 pt-5">
                 {
                     loading ? <Spinner animation="border" variant="danger" />

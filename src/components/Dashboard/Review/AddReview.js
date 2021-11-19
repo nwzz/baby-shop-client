@@ -24,7 +24,7 @@ const AddReview = ({ review, setReview, edit, setEdit }) => {
         data.rating = rating;
 
         if (edit) {
-            axios.patch(`https://polar-beyond-73344.herokuapp.com/updateReview/${review._id}`, data)
+            axios.patch(`https://nwzz-baby-shop.herokuapp.com/updateReview/${review._id}`, data)
                 .then(res => {
                     toast.dismiss(loading);
                     if (
@@ -49,7 +49,7 @@ const AddReview = ({ review, setReview, edit, setEdit }) => {
             return;
         }
 
-        axios.post('https://polar-beyond-73344.herokuapp.com/addReview', data)
+        axios.post('https://nwzz-baby-shop.herokuapp.com/addReview', data)
             .then(res => {
                 toast.dismiss(loading);
                 if (res.data) {

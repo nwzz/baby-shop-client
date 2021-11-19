@@ -17,7 +17,7 @@ const ServicePricing = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:8000/services')
+        axios.get('https://nwzz-baby-shop.herokuapp.com/services')
             .then(res => {
                 setServices(res.data);
                 setLoading(false);

@@ -16,7 +16,7 @@ const ManageService = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios.get('https://polar-beyond-73344.herokuapp.com/services')
+        axios.get('https://nwzz-baby-shop.herokuapp.com//services')
             .then(res => {
                 setServices(res.data);
                 setLoading(false);
@@ -41,7 +41,7 @@ const ManageService = () => {
             if (wantDelete) {
                 const loading = toast.loading('Deleting...Please wait!');
                 const removedServices = services.filter(item => item._id !== id);
-                axios.delete(`https://polar-beyond-73344.herokuapp.com/delete/${id}`)
+                axios.delete(`https://nwzz-baby-shop.herokuapp.com/delete/${id}`)
                     .then(res => {
                         toast.dismiss(loading);
                         if (res.data) {

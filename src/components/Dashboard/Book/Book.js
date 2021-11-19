@@ -21,7 +21,7 @@ const Book = () => {
     const serviceInfo = services.find(service => service.title === selectedOption.value);
 
     useEffect(() => {
-        axios.get('https://polar-beyond-73344.herokuapp.com/services')
+        axios.get('https://nwzz-baby-shop.herokuapp.com/services')
             .then(res => setServices(res.data))
             .catch(error => toast.error(error.message))
     }, [])
@@ -57,7 +57,7 @@ const Book = () => {
                     <div className="px-4">
                         <Row>
                             <Col md={6} xs={12} className="pr-md-4">
-                                <label style={{ fontWeight: "bold" }}>Service</label>
+                                <label style={{ fontWeight: "bold" }}>Product</label>
                                 <Select
                                     onChange={option => setSelectedOption(option)}
                                     defaultValue={defaultOption}

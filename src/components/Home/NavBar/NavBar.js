@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { UserContext } from '../../../App';
-import logo from '../../../images/cricket-bat-and-ball-icon-on-white-vector.webp';
+import logo from '../../../images/logo.png';
 import ProfilePopper from '../ProfilePopper/ProfilePopper';
 
 const NavBar = () => {
@@ -35,11 +35,11 @@ const NavBar = () => {
                 <img
                     alt="Logo"
                     src={logo}
-                    width="40"
-                    height="40"
-                    className="d-inline-block align-top"
+                    width="50"
+                    height="50"
+                    className="d-inline-block mt-0 align-top"
                 />{' '}
-                <strong>BatMaster</strong>
+                <strong>Baby Shop</strong>
             </Navbar.Brand>
 
             <Navbar.Toggle onClick={() => setCollapsed(!isCollapsed ? 'show' : null)} aria-controls="navbar-nav" />

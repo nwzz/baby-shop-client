@@ -105,7 +105,7 @@ const Login = () => {
             >
                 < div className="user signinBx">
                     <div className="imgBx">
-                        <img className="img-fluid" src="https://media.gettyimages.com/photos/helmet-and-bat-rest-against-the-stumps-during-englands-game-against-picture-id83617213?s=612x612" alt="" />
+                        <img className="img-fluid" src="https://cdn.shopify.com/s/files/1/0179/5829/products/twins-baby-gift-two-bears-in-a-box-boy-boy_grande.jpg?v=1568787305" alt="" />
                     </div>
                     <div className="formBx">
                         <form onSubmit={handleSignIn(onSubmit)}>
@@ -153,7 +153,7 @@ const Login = () => {
                             </p>
                         </form>
                     </div>
-                    <div className="imgBx"><img src="https://staticg.sportskeeda.com/wp-content/uploads/2015/03/bat5-1427669756.jpg" alt="" /></div>
+                    <div className="imgBx"><img src="https://cdn.jazp.com/assets/subcategory/bc4eb08569c73c8bd6d8e6ebb12eaba5.jpg" alt="" /></div>
                 </div>
             </div>
 

@@ -14,7 +14,7 @@ import React, { useContext } from 'react';
 import toast from 'react-hot-toast';
 import { Link, useParams } from 'react-router-dom';
 import { UserContext } from '../../../App';
-import Logo from '../../../images/cricket-bat-and-ball-icon-on-white-vector.webp';
+import Logo from '../../../images/logo.png';
 import { handleSignOut, initializeLoginFramework } from '../../Login/LoginManager';
 import SidebarLoader from './SidebarLoader.js';
 
@@ -39,7 +39,7 @@ const Sidebar = ({ show, adminLoading, setShowSidebar }) => {
                     height="42"
                     className="d-inline-block align-top"
                 />{' '}
-                <h2 className="d-inline-block"><Link to="/">BatMaster</Link></h2>
+                <h2 className="d-inline-block"><Link to="/">Baby Shop</Link></h2>
                 <button
                     onClick={() => setShowSidebar(!show)}
                     type="button" id="sidebarCollapse"
@@ -67,7 +67,7 @@ const Sidebar = ({ show, adminLoading, setShowSidebar }) => {
                             </li>
                             <li>
                                 <Link to="/dashboard/addService" className={panel === "addService" ? "link-active" : ""}>
-                                    <FontAwesomeIcon icon={faFileMedical} /> <span>Add Service</span>
+                                    <FontAwesomeIcon icon={faFileMedical} /> <span>Add Product</span>
                                 </Link>
                             </li>
                             <li>
@@ -77,19 +77,19 @@ const Sidebar = ({ show, adminLoading, setShowSidebar }) => {
                             </li>
                             <li>
                                 <Link to="/dashboard/manageServices" className={panel === "manageServices" ? "link-active" : ""}>
-                                    <FontAwesomeIcon icon={faCog} /> <span>Manage Services</span>
+                                    <FontAwesomeIcon icon={faCog} /> <span>Manage Products</span>
                                 </Link>
                             </li>
                         </>
                         : <>
                             <li>
                                 <Link to="/dashboard/book" className={panel === "book" ? "link-active" : ""}>
-                                    <FontAwesomeIcon icon={faShoppingCart} /> <span>Book</span>
+                                    <FontAwesomeIcon icon={faShoppingCart} /> <span>Buy</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/dashboard/bookingList" className={panel === "bookingList" ? "link-active" : ""}>
-                                    <FontAwesomeIcon icon={faBook} /> <span>Booking List</span>
+                                    <FontAwesomeIcon icon={faBook} /> <span>Buying List</span>
                                 </Link>
                             </li>
                             <li>

@@ -16,7 +16,7 @@ const MakeAdmin = () => {
         //     return swal("Permission restriction!", "As a test-admin, you don't have this permission.", "info");;
         // }
         const loading = toast.loading('Adding...Please wait!');
-        axios.post('https://polar-beyond-73344.herokuapp.com/addAdmin', data)
+        axios.post('https://nwzz-baby-shop.herokuapp.com/addAdmin', data)
             .then(res => {
                 toast.dismiss(loading);
                 if (res.data) {

@@ -24,11 +24,11 @@ const DashboardNavbar = ({ setShowSidebar, show }) => {
                         {
                             panel === "profile" ? "Profile"
                             : panel === "orderList" ? "Order List"
-                            : panel === "addService" ? "Add Service"
+                            : panel === "addProduct" ? "Add Service"
                             : panel === "makeAdmin" ? "Make Admin"
                             : panel === "manageServices" ? "Manage Services"
-                            : panel === "book" ? "Book"
-                            : panel === "bookingList" ? "Booking List"
+                            : panel === "Buy" ? "Buy"
+                            : panel === "buyingList" ? "Buying List"
                             : panel === "review" ? "Review"
                             : ""
                         }

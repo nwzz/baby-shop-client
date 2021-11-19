@@ -1,29 +1,46 @@
 import React from 'react';
-import { Button, Col, Container, Image, Row } from 'react-bootstrap';
-import Fade from 'react-reveal/Fade';
+import { Button, Carousel, Col, Container, Image, Row } from 'react-bootstrap';
+import caro1 from '../../../images/caro1.png';
+import caro2 from '../../../images/images1.jpg';
+import caro3 from '../../../images/images.jpg';
 
 const Banner = () => {
     return (
-        <Container fluid>
-            <Row className="align-items-center justify-content-center banner">
-                <Col md={6} className="p-md-5 order-2 order-md-1">
-                    <Fade left duration={2000} distance="40px">
-                        <h1>Explore Your Best bat</h1>
-                        <p className="text-muted my-4 pr-md-5">Discover your next weapon adventure, become an explorer to get started!</p>
-                        <Button
-                            className="btn-main"
-                            href="#services">
-                            Get Started
-                        </Button>
-                    </Fade>
-                </Col>
-                <Col md={5} className="order-1 order-md-2">
-                    <Fade right duration={2000} distance="40px">
-                        <Image src="https://www.sportscounty.com/wp-content/uploads/2020/04/best-cricket-bats-in-the-world.jpg" fluid />
-                    </Fade>
-                </Col>
-            </Row>
-        </Container>
+        <Carousel variant="dark">
+                    <Carousel.Item style={{height:'600px', width:'100%'}}>
+                        <img
+                            className="d-block w-100 align-item-center"
+                            src={caro1}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+                            <h5>Travelling is Meditation</h5>
+                            <p>We care about You the best Way</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item style={{height:'600px', width:'100%'}}>
+                        <img
+                            className="d-block w-100"
+                            src={caro2}
+                            alt="Second slide"
+                        />
+                        <Carousel.Caption>
+                            <h5>No Travelling No Life</h5>
+                            <p>We Provide Care and Love more than Treatment</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item style={{height:'600px', width:'100%'}}>
+                        <img
+                            className="d-block w-100"
+                            src={caro3}
+                            alt="Third slide"
+                        />
+                        <Carousel.Caption>
+                            <h5>Where do You Want to go before you Die </h5>
+                            <p>The Second way of Learning is Reading book First way you are getting here!</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
     );
 };
 
