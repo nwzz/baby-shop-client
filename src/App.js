@@ -1,18 +1,14 @@
 import axios from "axios";
 import { createContext, lazy, Suspense, useEffect, useState } from "react";
-import toast, { Toaster } from 'react-hot-toast';
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch
-} from "react-router-dom";
-import './App.css';
+import toast, { Toaster } from "react-hot-toast";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./App.css";
 import LoadingSpinner from "./components/Home/LoadingSpinner/LoadingSpinner";
 import { getDecodedUser } from "./components/Login/LoginManager";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
-const Home = lazy(() => import('./pages/Home'));
-const Dashboard = lazy(() => import('./pages/Dashboard'));
-const Login = lazy(() => import('./components/Login/Login'));
+const Home = lazy(() => import("./pages/Home"));
+const Dashboard = lazy(() => import("./pages/Dashboard"));
+const Login = lazy(() => import("./components/Login/Login"));
 
 export const UserContext = createContext();
 
@@ -23,16 +19,27 @@ function App() {
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
-    axios.get(`https://polar-beyond-73344.herokuapp.com/isAdmin?email=${loggedInUser?.email}`)
-      .then(res => {
+    axios
+      .get(
+        `https://nwzz-baby-shop.herokuapp.com/isAdmin?email=${loggedInUser?.email}`
+      )
+      .then((res) => {
         setIsAdmin(res.data);
         setAdminLoading(false);
       })
-      .catch(error => toast.error(error.message))
+      .catch((error) => toast.error(error.message));
   }, [loggedInUser?.email]);
 
   return (
-    <UserContext.Provider value={{ loggedInUser, setLoggedInUser, isAdmin, selectedService, setSelectedService }}>
+    <UserContext.Provider
+      value={{
+        loggedInUser,
+        setLoggedInUser,
+        isAdmin,
+        selectedService,
+        setSelectedService,
+      }}
+    >
       <Router>
         <Toaster />
         <Suspense fallback={<LoadingSpinner />}>
